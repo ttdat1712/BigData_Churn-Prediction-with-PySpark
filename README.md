@@ -46,4 +46,4 @@ The dataset, stored in the data/ directory, encompasses features such as custome
 
 [View PowerPoint Presentation](https://www.canva.com/design/DAGYYjXLDq8/eWAaYeecaHkId6K_gUjoeQ/edit)
 
-[Source Code](./src/code.py)
+[Source Code]('notebooks/ProjectBigData_CustomerChurnPrediction.ipynb')
