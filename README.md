@@ -42,8 +42,8 @@ The dataset, stored in the data/ directory, encompasses features such as custome
 + Implement real-time monitoring for early
 
 ## Resources
-[Download Report](report/report.pdf)
+[Report](report/report.pdf)
 
-[View PowerPoint Presentation](./presentation.pptx) 
+[View PowerPoint Presentation](https://www.canva.com/design/DAGYYjXLDq8/eWAaYeecaHkId6K_gUjoeQ/edit)
 
 [Source Code](./src/code.py)
