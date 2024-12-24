@@ -36,13 +36,13 @@ The dataset, stored in the data/ directory, encompasses features such as custome
 - Preprocess data
 - Train the model
 - Evaluate the model 
-## Future Work 
+## Future Work
 + Fine-tune hyperparameters
 + Experiment with additional algorithms
 + Implement real-time monitoring for early
 
 ## Resources
-[Download Report](/report.pdf)
+[Download Report](report/report.pdf)
 
 [View PowerPoint Presentation](./presentation.pptx) 
 
