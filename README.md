@@ -1,46 +1,69 @@
+<img src="images/1.png" alt="Project Banner" width="700"/>
+
 # Customer Churn Prediction with PySpark
 
 ## Overview
-This project aims to predict customer churn using PySpark, leveraging big data processing capabilities to handle and analyze large datasets. The goal is to develop and evaluate machine learning models to identify customers who are likely to leave a service, enabling proactive retention strategies.
+This project leverages Apache Spark and PySpark to predict customer churn for a telecommunications company. By utilizing big data processing, the solution efficiently analyzes large datasets and applies machine learning models to identify customers at risk of leaving, enabling proactive retention strategies.
 
 ## Motivation
-Any organization that deals with big data and data warehousing needs some form of distributed system. Among the most widely used distributed systems, Apache Spark stands out due to its capability to handle several petabytes of data across thousands of cooperating servers, whether physical or virtual. Its simplicity and speed make it particularly appealing.
-
-Data professionals can greatly benefit from learning the logistics and practical applications of Spark. To facilitate this, I have created a repository showcasing various examples of PySpark functions and utilities that can be used to build complete ETL processes for data modeling. Spark also offers a Python API, making it easy to manage data with Python, especially using Jupyter notebooks.
-
-This repository is geared towards individuals who are already familiar with Python and have some background in data analytics, although I often skip the environment setup. However, if you follow the installation section, you should be able to work through the notebooks without any major issues. PySpark's integration with Jupyter Notebooks, coupled with its pre-built functions, makes data processing efficient and accessible. The goal of this repository is to help you get up and running with PySpark quickly.
+Organizations dealing with big data require scalable distributed systems. Apache Spark is a leading solution, offering speed and simplicity for processing petabytes of data. This repository demonstrates practical PySpark applications for ETL, data modeling, and machine learning, making it a valuable resource for data professionals and analysts.
 
 ## Project Structure
-- `data/`: Directory containing the dataset.
-- `notebooks/`: Jupyter notebooks for analysis and modeling.
-- `models/`: Saved models and related artifacts.
+- `data/`: Datasets for training and evaluation
+- `notebooks/`: Jupyter notebooks for analysis and modeling
+- `model/`: Saved models and related artifacts
+- `images/`: Visualizations and figures
+- `report/`: Project report
   
 ## Dataset
-The dataset utilized in this project provides comprehensive information about the customers of a telecommunications company, covering aspects such as duration of service, call patterns, and churn behavior. Here is a detailed overview of the dataset:
+The dataset contains 20 columns with a mix of continuous, discrete, and categorical features. Key attributes include International plan, Total day charge, and Customer service calls, which are strong predictors of churn. The target variable is 'Churn', indicating whether a customer discontinued the service. Data files are located in the `data/` directory.
 
-* Column Count: 20 columns in total.
- 
-* Data Types: A mixture of continuous, discrete, and categorical data.
+## Installation
+1. **Clone the repository**
+   ```powershell
+   git clone https://github.com/ttdat1712/BigData_Churn-Prediction-with-PySpark.git
+   cd BigData_Churn-Prediction-with-PySpark
+   ```
+2. **Install Python (>=3.7)**
+3. **Install dependencies**
+   ```powershell
+   pip install pyspark notebook
+   ```
+4. **(Optional) Create a virtual environment**
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\activate
+   pip install pyspark 
+   ```
+   
+## Usage
+1. **Start Jupyter Notebook**
+   ```powershell
+   jupyter notebook
+   ```
+2. **Open and run the notebook**
+   - Navigate to `notebooks/ProjectBigData_CustomerChurnPrediction.ipynb`.
+   - Follow the steps to preprocess data, train the model, and evaluate results.
+3. **Model Training & Evaluation**
+   - Data preprocessing: Handle missing values, encode categorical features
+   - Model training: Decision Tree, Random Forest, or other algorithms
+   - Evaluation: Accuracy, Precision, Recall, F1-score
+4. **View Results**
+   - Visualizations and metrics are available in the notebook and `images/` directory
+   - Detailed report in `report/report.pdf`
 
-* Target Variable: The target variable for prediction is 'Churn'.
+## Results
+The project demonstrates effective churn prediction using PySpark. Key results include:
+- **Model Performance:** Achieved high accuracy and F1-score on test data
+- **Feature Importance:** International plan, Total day charge, and Customer service calls are top predictors
+- **Visualizations:** Confusion matrix, ROC curve, and feature importance plots (see `images/`)
+- **Report:** Detailed analysis and findings in [report/report.pdf](report/report.pdf)
 
-* Key Features: Certain attributes like the International plan, Total day charge, and Customer service calls are anticipated to significantly influence the likelihood of customer churn.
-
-The dataset, stored in the data/ directory, encompasses features such as customer demographics, usage patterns, and service subscription details. The target variable, churn, indicates whether a customer has discontinued the service.
-
-## Prerequisites
-* PySpark
-* Jupyter Notebook
-
-## Usage 
-- Preprocess data
-- Train the model
-- Evaluate the model 
 ## Future Work
-+ Fine-tune hyperparameters
-+ Experiment with additional algorithms
-+ Implement real-time monitoring for early
-
+- Fine-tune hyperparameters
+- Experiment with additional algorithms
+- Implement real-time monitoring for early churn detection
+  
 ## Resources
 [Report](report/report.pdf)
 
